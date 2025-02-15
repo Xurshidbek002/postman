@@ -15,11 +15,10 @@
 //   },
 // ]);
 
-
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Home from "./Pages/Home";
-import Login from "./Components/Login";
+// import Login from "./Components/Login";
 
 export const Router = createBrowserRouter([
   {
@@ -27,12 +26,8 @@ export const Router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        index: true, // Bu "/"" sahifasi uchun Home ni render qiladi
+        index: true,
         element: <Home />,
-      },
-      {
-        path: "login", // "/login" uchun Login sahifasi
-        element: <Login />,
       },
     ],
   },
